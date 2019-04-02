@@ -1,0 +1,20 @@
+{% extends 'layout.html'%}
+
+{%block body%}
+
+<div class="jumbotron text-center">
+    <h1>Welcom To FlaskApp</h1>
+    <p class="lead">Flask-Bootstrap packages Bootstrap in to an extension
+        that mostly consistsa of a blueprint
+        named ‘bootstrap’.
+    </p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+
+
+</div>
+
+
+{%endblock%}
